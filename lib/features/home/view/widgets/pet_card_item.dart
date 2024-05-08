@@ -8,6 +8,7 @@ class PetCardItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+        surfaceTintColor: ColorsTheme.myGreen,
         elevation: 5,
         color: Colors.white,
         shadowColor: const Color.fromARGB(122, 52, 168, 83),
@@ -23,37 +24,41 @@ class PetCardItem extends StatelessWidget {
                 child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.r),
                     child: Container(
-                      color: ColorsTheme.myGreen,
+                      color: Colors.white,
                     )),
               ),
               SizedBox(
-                width: 30.w,
+                width: 20.w,
               ),
               Expanded(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      'Name:  ',
-                      maxLines: 2,
+                      'Name:',
+                      maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
                     SizedBox(
                       height: 3.h,
                     ),
                     const Text(
-                      'bookModel.volumeInfo.authors?[0] ',
+                      'Geder:',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                     ),
                     SizedBox(
                       height: 3.h,
                     ),
                     const Text(
-                      'Type:  ',
-                    )
+                      'Type:',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ));

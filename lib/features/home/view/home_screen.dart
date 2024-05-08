@@ -12,12 +12,15 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
+        surfaceTintColor: Colors.white,
         centerTitle: true,
         elevation: 0,
         title: const Text(
           'Pets',
           style: TextStyle(
-              color: ColorsTheme.myGreen, fontWeight: FontWeight.bold),
+            color: ColorsTheme.myGreen,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
       body: Column(

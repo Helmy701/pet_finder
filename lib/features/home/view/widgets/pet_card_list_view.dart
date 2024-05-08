@@ -14,10 +14,11 @@ class PetCardListView extends StatelessWidget {
         itemCount: 10,
         itemBuilder: (context, index) {
           return GestureDetector(
-              onTap: () {
-                Navigator.of(context).pushNamed(Routes.detailsScreen);
-              },
-              child: const PetCardItem());
+            onTap: () {
+              Navigator.of(context).pushNamed(Routes.detailsScreen);
+            },
+            child: const PetCardItem(),
+          );
         },
       ),
     );
