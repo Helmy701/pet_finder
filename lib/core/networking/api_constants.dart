@@ -1,7 +1,7 @@
 class ApiConstants {
   static const String baseUrl = "https://api.petfinder.com/v2/";
-  static const String login = "animals";
-  static const String signup = "oauth2/token";
+  static const String animals = "animals";
+  static const String auth = "oauth2/token";
 }
 
 class ApiErrors {
